@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // Admin
-        User::factory()->create([
+        User::create([
             'name' => 'Admin User',
             'email' => 'admin@blendup.local',
             'password' => Hash::make('admin123'),
@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // User
-        User::factory()->create([
+        User::create([
             'name' => 'Test User',
             'email' => 'user@blendup.local',
             'password' => Hash::make('password'),
