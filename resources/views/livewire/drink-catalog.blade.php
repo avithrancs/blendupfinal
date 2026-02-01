@@ -97,7 +97,7 @@
 
                         <!-- Price + CTA -->
                         <div class="flex justify-between items-center pt-2">
-                            <span class="text-2xl font-bold text-deep-teal">${{ number_format($drink->price, 2) }}</span>
+                            <span class="text-2xl font-bold text-deep-teal">Rs. {{ number_format($drink->price, 2) }}</span>
                             <button wire:click="openModal({{ $drink->id }})" class="bg-muted-coral text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300">
                                 Customize
                             </button>
@@ -131,7 +131,7 @@
             <div class="p-6">
                 <h3 class="text-2xl font-poppins font-bold text-charcoal">{{ $selectedDrink->name }}</h3>
                 <p class="text-gray-600 mt-2 text-sm">{{ $selectedDrink->description ?? 'Freshly blended for you.' }}</p>
-                <div class="text-deep-teal font-bold text-xl mt-3">${{ number_format($selectedDrink->price, 2) }}</div>
+                <div class="text-deep-teal font-bold text-xl mt-3">Rs. {{ number_format($selectedDrink->price, 2) }}</div>
 
                 <div class="mt-6 space-y-4">
                     <!-- Quantity -->
@@ -154,7 +154,7 @@
                 <div class="mt-8">
                     <button wire:click="addToCart" class="w-full bg-deep-teal text-white py-3 rounded-xl font-semibold hover:bg-opacity-90 transition shadow-lg flex items-center justify-center gap-2">
                         <i class="fas fa-shopping-bag"></i>
-                        Add to Order - ${{ number_format($selectedDrink->price * $quantity, 2) }}
+                        Add to Order - Rs. {{ number_format($selectedDrink->price * $quantity, 2) }}
                     </button>
                 </div>
             </div>

@@ -82,7 +82,7 @@ class Checkout extends Component
              $subtotal += $item['price'] * $item['quantity'];
         }
         
-        $deliveryFee = ($this->order_type === 'delivery') ? 2.50 : 0;
+        $deliveryFee = ($this->order_type === 'delivery') ? 150.00 : 0;
         $total = $subtotal + $deliveryFee;
 
         // Create Pending Order
@@ -139,7 +139,7 @@ class Checkout extends Component
             foreach ($this->cart as $item) {
                 $lineItems[] = [
                     'price_data' => [
-                        'currency' => 'usd', // Or your currency
+                        'currency' => 'lkr', // Or your currency
                         'product_data' => [
                             'name' => $item['name'],
                         ],
@@ -153,7 +153,7 @@ class Checkout extends Component
             if ($deliveryFee > 0) {
                  $lineItems[] = [
                     'price_data' => [
-                        'currency' => 'usd',
+                        'currency' => 'lkr',
                         'product_data' => [
                             'name' => 'Delivery Fee',
                         ],

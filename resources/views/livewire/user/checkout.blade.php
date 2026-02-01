@@ -145,24 +145,24 @@
                 @php $subtotal += $item['price'] * $item['quantity']; @endphp
                 <div class="flex items-center justify-between">
                     <span>{{ $item['name'] }} <span class="text-gray-400">× {{ $item['quantity'] }}</span></span>
-                    <span class="font-semibold">${{ number_format($item['price'] * $item['quantity'], 2) }}</span>
+                    <span class="font-semibold">Rs. {{ number_format($item['price'] * $item['quantity'], 2) }}</span>
                 </div>
             @endforeach
             
             <div class="border-t border-gray-100 pt-4 mt-4 space-y-2">
               <div class="flex justify-between">
                   <span>Subtotal</span>
-                  <span>${{ number_format($subtotal, 2) }}</span>
+                  <span>Rs. {{ number_format($subtotal, 2) }}</span>
               </div>
               
               <div class="flex justify-between {{ $order_type === 'delivery' ? 'text-charcoal' : 'text-gray-400 line-through' }}">
                   <span>Delivery</span>
-                  <span>${{ $order_type === 'delivery' ? '2.50' : '0.00' }}</span>
+                  <span>Rs. {{ $order_type === 'delivery' ? '150.00' : '0.00' }}</span>
               </div>
               
               <div class="flex justify-between font-bold text-lg text-deep-teal pt-2 border-t border-gray-100 mt-2">
                   <span>Total</span>
-                  <span>${{ number_format($subtotal + ($order_type === 'delivery' ? 2.50 : 0), 2) }}</span>
+                  <span>Rs. {{ number_format($subtotal + ($order_type === 'delivery' ? 150 : 0), 2) }}</span>
               </div>
             </div>
           </div>

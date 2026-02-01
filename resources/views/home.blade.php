@@ -101,7 +101,7 @@
     
                     <!-- Price + CTA -->
                     <div class="flex justify-between items-center mt-4">
-                        <span class="text-2xl font-bold text-deep-teal">${{ number_format($d->price, 2) }}</span>
+                        <span class="text-2xl font-bold text-deep-teal">Rs. {{ number_format($d->price, 2) }}</span>
     
                         <a href="{{ route('menu', ['q' => $d->name]) }}"
                            class="bg-muted-coral text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300">

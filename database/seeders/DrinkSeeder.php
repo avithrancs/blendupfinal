@@ -15,7 +15,7 @@ class DrinkSeeder extends Seeder
         $drinks = [
             [
                 'name' => 'Green Goddess',
-                'price' => 8.99,
+                'price' => 450.00,
                 'category' => 'Smoothies',
                 'is_featured' => true,
                 'image_url' => 'https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400&h=300&fit=crop&crop=center',
@@ -23,7 +23,7 @@ class DrinkSeeder extends Seeder
             ],
             [
                 'name' => 'Tropical Paradise',
-                'price' => 9.49,
+                'price' => 490.00,
                 'category' => 'Smoothies',
                 'is_featured' => true,
                 'image_url' => 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop&crop=center',
@@ -31,7 +31,7 @@ class DrinkSeeder extends Seeder
             ],
             [
                 'name' => 'Fresh Orange Juice',
-                'price' => 5.99,
+                'price' => 400.00,
                 'category' => 'Juices',
                 'is_featured' => false,
                 'image_url' => 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop&crop=center',
@@ -39,7 +39,7 @@ class DrinkSeeder extends Seeder
             ],
             [
                 'name' => 'Mango Lassi',
-                'price' => 4.99,
+                'price' => 420.00,
                 'category' => 'Seasonal',
                 'is_featured' => true,
                 'image_url' => 'https://picsum.photos/seed/ss4/400/300',
@@ -47,7 +47,7 @@ class DrinkSeeder extends Seeder
             ],
             [
                 'name' => 'Berry Blast',
-                'price' => 5.49,
+                'price' => 475.00,
                 'category' => 'Smoothies',
                 'is_featured' => false,
                 'image_url' => 'https://picsum.photos/seed/sm2/400/300',
@@ -55,7 +55,7 @@ class DrinkSeeder extends Seeder
             ],
             [
                 'name' => 'Pumpkin Spice Smoothie',
-                'price' => 6.49,
+                'price' => 480.00,
                 'category' => 'Seasonal',
                 'is_featured' => true,
                 'image_url' => 'https://picsum.photos/seed/ss1/400/300',
