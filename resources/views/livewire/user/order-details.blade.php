@@ -72,7 +72,7 @@
                                     <p class="text-sm text-gray-400 mt-1">Qty: {{ $item->quantity }}</p>
                                 </div>
                             </div>
-                            <p class="font-bold text-charcoal">${{ number_format($item->unit_price * $item->quantity, 2) }}</p>
+                            <p class="font-bold text-charcoal">Rs. {{ number_format($item->unit_price * $item->quantity, 2) }}</p>
                         </div>
                         @endforeach
                     </div>
@@ -87,15 +87,15 @@
                     <div class="space-y-3 text-sm text-gray-600">
                         <div class="flex justify-between">
                             <span>Subtotal</span>
-                            <span>${{ number_format($order->total / 1.08, 2) }}</span> 
+                            <span>Rs. {{ number_format($order->total / 1.08, 2) }}</span> 
                         </div>
                         <div class="flex justify-between">
                             <span>Tax & Fees</span>
-                            <span>${{ number_format($order->total - ($order->total / 1.08), 2) }}</span>
+                            <span>Rs. {{ number_format($order->total - ($order->total / 1.08), 2) }}</span>
                         </div>
                         <div class="flex justify-between pt-3 border-t border-gray-100 font-bold text-lg text-deep-teal">
                             <span>Total</span>
-                            <span>${{ number_format($order->total, 2) }}</span>
+                            <span>Rs. {{ number_format($order->total, 2) }}</span>
                         </div>
                     </div>
                     <div class="mt-6 pt-4 border-t border-gray-100">

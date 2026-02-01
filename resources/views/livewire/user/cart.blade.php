@@ -34,7 +34,7 @@
                                 <div class="flex flex-wrap gap-2 mt-1">
                                     <!-- Customizations logic to come here -->
                                 </div>
-                                <div class="text-sm text-muted-coral mt-1 font-semibold">${{ number_format($item['price'], 2) }}</div>
+                                <div class="text-sm text-muted-coral mt-1 font-semibold">Rs. {{ number_format($item['price'], 2) }}</div>
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@
         @php
             $subtotal = 0;
             foreach($cart as $c) { $subtotal += $c['price'] * $c['quantity']; }
-            $delivery = count($cart) > 0 ? 2.99 : 0;
+            $delivery = count($cart) > 0 ? 150.00 : 0;
             $tax = $subtotal * 0.08;
             $total = $subtotal + $delivery + $tax;
         @endphp
@@ -73,19 +73,19 @@
           <div class="space-y-2 text-sm text-gray-700">
             <div class="flex justify-between">
               <span>Subtotal</span>
-              <span>${{ number_format($subtotal, 2) }}</span>
+              <span>Rs. {{ number_format($subtotal, 2) }}</span>
             </div>
             <div class="flex justify-between">
               <span>Delivery Fee</span>
-              <span>${{ number_format($delivery, 2) }}</span>
+              <span>Rs. {{ number_format($delivery, 2) }}</span>
             </div>
             <div class="flex justify-between">
               <span>Tax</span>
-              <span>${{ number_format($tax, 2) }}</span>
+              <span>Rs. {{ number_format($tax, 2) }}</span>
             </div>
             <div class="flex justify-between font-semibold text-base pt-2 border-t">
               <span>Total</span>
-              <span class="text-deep-teal">${{ number_format($total, 2) }}</span>
+              <span class="text-deep-teal">Rs. {{ number_format($total, 2) }}</span>
             </div>
           </div>
     
@@ -110,7 +110,7 @@
           <div class="mt-4 space-y-2 text-sm text-charcoal">
             <div class="flex items-start gap-2">
               <i class="fas fa-thumbs-up mt-0.5 text-deep-teal"></i>
-              <span>Free delivery on orders over $50</span>
+              <span>Free delivery on orders over Rs. 5000</span>
             </div>
             <div class="flex items-start gap-2">
               <i class="fas fa-clock mt-0.5 text-muted-coral"></i>
