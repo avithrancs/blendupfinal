@@ -20,4 +20,5 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
 
 Route::middleware(['auth:sanctum', 'admin', 'throttle:60,1'])->group(function () {
     Route::delete('/drinks/{id}', [SystemApiController::class, 'deleteDrink']);
+    Route::get('/system/stats', [SystemApiController::class, 'getSystemStats']);
 });

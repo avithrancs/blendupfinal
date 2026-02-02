@@ -78,4 +78,16 @@ class SystemApiController extends Controller
 
         return response()->json(['message' => 'Drink deleted successfully.'], 200);
     }
+
+    public function getSystemStats()
+    {
+        $stats = [
+            'users' => \App\Models\User::count(),
+            'orders' => Order::count(),
+            'revenue' => Order::where('status', 'paid')->sum('total'),
+            'drinks' => Drink::count(),
+        ];
+        
+        return response()->json(['data' => $stats]);
+    }
 }
