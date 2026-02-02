@@ -36,7 +36,6 @@ CREATE TABLE `cache` (
 
 LOCK TABLES `cache` WRITE;
 /*!40000 ALTER TABLE `cache` DISABLE KEYS */;
-INSERT INTO `cache` VALUES ('laravel-cache-356a192b7913b04c54574d18c28d46e6395428ab','i:1;',1770017841),('laravel-cache-356a192b7913b04c54574d18c28d46e6395428ab:timer','i:1770017841;',1770017841),('laravel-cache-da4b9237bacccdf19c0760cab7aec4a8359010b0','i:1;',1770017682),('laravel-cache-da4b9237bacccdf19c0760cab7aec4a8359010b0:timer','i:1770017682;',1770017682),('laravel-cache-drink_categories','O:29:\"Illuminate\\Support\\Collection\":2:{s:8:\"\0*\0items\";a:3:{i:0;s:9:\"Smoothies\";i:1;s:6:\"Juices\";i:2;s:8:\"Seasonal\";}s:28:\"\0*\0escapeWhenCastingToString\";b:0;}',1770024900);
 /*!40000 ALTER TABLE `cache` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -116,7 +115,7 @@ CREATE TABLE `drinks` (
 
 LOCK TABLES `drinks` WRITE;
 /*!40000 ALTER TABLE `drinks` DISABLE KEYS */;
-INSERT INTO `drinks` VALUES (1,'Green Goddess',450.00,'Smoothies','https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400&h=300&fit=crop&crop=center',1,'A refreshing blend of spinach, kale, and apple.','2026-02-02 01:10:05','2026-02-02 01:10:05'),(2,'Tropical Paradise',490.00,'Smoothies','https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop&crop=center',1,'Mango, pineapple, and coconut milk for a tropical escape.','2026-02-02 01:10:05','2026-02-02 01:10:05'),(3,'Fresh Orange Juice',400.00,'Juices','https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop&crop=center',0,'Freshly squeezed oranges, no added sugar.','2026-02-02 01:10:05','2026-02-02 01:10:05'),(4,'Mango Lassi',420.00,'Seasonal','\\https://images.unsplash.com/photo-1625667893125-ca3b9492946c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',1,'Traditional yogurt-based drink with ripe mango pulp.','2026-02-02 01:10:05','2026-02-02 01:10:05'),(5,'Berry Blast',475.00,'Smoothies','https://picsum.photos/seed/sm2/400/300',0,'Mixed berries with a hint of honey.','2026-02-02 01:10:05','2026-02-02 01:10:05'),(6,'Pumpkin Spice Smoothie',480.00,'Seasonal','https://picsum.photos/seed/ss1/400/300',1,'Seasonal favorite with pumpkin puree and spices.','2026-02-02 01:10:05','2026-02-02 01:10:05');
+INSERT INTO `drinks` VALUES (1,'Green Goddess',450.00,'Smoothies','https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400&h=300&fit=crop&crop=center',1,'A refreshing blend of spinach, kale, and apple.','2026-02-02 04:09:35','2026-02-02 04:09:35'),(2,'Tropical Paradise',490.00,'Smoothies','https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop&crop=center',1,'Mango, pineapple, and coconut milk for a tropical escape.','2026-02-02 04:09:35','2026-02-02 04:09:35'),(3,'Fresh Orange Juice',400.00,'Juices','https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop&crop=center',0,'Freshly squeezed oranges, no added sugar.','2026-02-02 04:09:35','2026-02-02 04:09:35'),(4,'Mango Lassi',420.00,'Seasonal','https://images.unsplash.com/photo-1625667893125-ca3b9492946c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',1,'Traditional yogurt-based drink with ripe mango pulp.','2026-02-02 04:09:35','2026-02-02 04:09:35'),(5,'Berry Blast',475.00,'Smoothies','https://picsum.photos/seed/sm2/400/300',0,'Mixed berries with a hint of honey.','2026-02-02 04:09:35','2026-02-02 04:09:35'),(6,'Pumpkin Spice Smoothie',480.00,'Seasonal','https://picsum.photos/seed/ss1/400/300',1,'Seasonal favorite with pumpkin puree and spices.','2026-02-02 04:09:35','2026-02-02 04:09:35');
 /*!40000 ALTER TABLE `drinks` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -221,7 +220,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -230,7 +229,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES (1,'0001_01_01_000000_create_users_table',1),(2,'0001_01_01_000001_create_cache_table',1),(3,'0001_01_01_000002_create_jobs_table',1),(4,'2026_01_07_113025_add_two_factor_columns_to_users_table',1),(5,'2026_01_07_113040_create_personal_access_tokens_table',1),(6,'2026_01_07_113138_create_drinks_table',1),(7,'2026_01_07_113138_create_orders_table',1),(8,'2026_01_07_113139_create_order_items_table',1);
+INSERT INTO `migrations` VALUES (9,'0001_01_01_000000_create_users_table',1),(10,'0001_01_01_000001_create_cache_table',1),(11,'0001_01_01_000002_create_jobs_table',1),(12,'2026_01_07_113025_add_two_factor_columns_to_users_table',1),(13,'2026_01_07_113040_create_personal_access_tokens_table',1),(14,'2026_01_07_113138_create_drinks_table',1),(15,'2026_01_07_113138_create_orders_table',1),(16,'2026_01_07_113139_create_order_items_table',1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -442,7 +441,7 @@ CREATE TABLE `personal_access_tokens` (
   UNIQUE KEY `personal_access_tokens_token_unique` (`token`),
   KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`),
   KEY `personal_access_tokens_expires_at_index` (`expires_at`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -451,7 +450,6 @@ CREATE TABLE `personal_access_tokens` (
 
 LOCK TABLES `personal_access_tokens` WRITE;
 /*!40000 ALTER TABLE `personal_access_tokens` DISABLE KEYS */;
-INSERT INTO `personal_access_tokens` VALUES (1,'App\\Models\\User',1,'test','fb43ec590fc8cab061670e95c2c7d078f37116e802dcbd8d16c06871c8882c2f','[\"*\"]','2026-02-02 02:06:21',NULL,'2026-02-02 01:26:49','2026-02-02 02:06:21'),(2,'App\\Models\\User',2,'test','d56969e372a6ca5f5ad895b780aca831c5ce8a2e9208787e79768df5576e3ab6','[\"*\"]','2026-02-02 02:03:42',NULL,'2026-02-02 01:26:49','2026-02-02 02:03:42');
 /*!40000 ALTER TABLE `personal_access_tokens` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -553,7 +551,6 @@ CREATE TABLE `sessions` (
 
 LOCK TABLES `sessions` WRITE;
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('8jV0HLuWIhuteZEm6rivaPP3MqRxTMsQ6zoQ1cen',NULL,'127.0.0.1','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36','YTozOntzOjY6Il90b2tlbiI7czo0MDoieHVuRHJJTVdCc3lwR3ozQU56OGx5SndZQ3BYY1ZwZFZ4OXAzZ0ZuWSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6NDk6Imh0dHA6Ly9jaGFpci1yaXNlLWt1cnQtY2l2aWxpYW4udHJ5Y2xvdWRmbGFyZS5jb20iO3M6NToicm91dGUiO3M6NDoiaG9tZSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1770023062),('ctTJazzvByOnjGyYMC4dl0HvQp2K4M42zWmp2H4D',NULL,'127.0.0.1','PostmanRuntime/7.51.0','YTozOntzOjY6Il90b2tlbiI7czo0MDoibFpXdlg0c05QVGo0THhXcEdYUkp2SExCMEtnSFFhbzVlaGNONFZSbSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9sb2dpbiI7czo1OiJyb3V0ZSI7czo1OiJsb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1770016824),('i3U96Z5hMPRnCPE2nUzdxO2mzCpcEnopNMNooJ6P',NULL,'127.0.0.1','PostmanRuntime/7.51.0','YTozOntzOjY6Il90b2tlbiI7czo0MDoiNnNhMm51ZFVJOFJhdnRrYnFFM1V6MHVNS1FIMk9uMHFaWDlxcjB5dSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9sb2dpbiI7czo1OiJyb3V0ZSI7czo1OiJsb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1770016835),('Luq1SEJXoJ7jhzisE59uuXJ5syuR5JWJPAQJOy6o',NULL,'127.0.0.1','PostmanRuntime/7.51.0','YToyOntzOjY6Il90b2tlbiI7czo0MDoiZkVUdnBVdm9lNk1Ma2ExRVlibnEybUhPQnVEWktRRVFkUlVEVHU3RCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1770017946),('MHPckXufNhY7IH9TGLPNJcw9G7liomwcRI0p2K1G',NULL,'127.0.0.1','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36','YTozOntzOjY6Il90b2tlbiI7czo0MDoiSENnWkV6d2h3UVZJS2Q0ZHBOMmNDZ0RyV29PTk55am9lSFBFWE02NSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMS9tZW51IjtzOjU6InJvdXRlIjtzOjQ6Im1lbnUiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19',1770024840),('ujBLYipU9N6qaBdPOrK7cx1N9PiZLIExyP4DX2pZ',NULL,'127.0.0.1','PostmanRuntime/7.51.0','YTozOntzOjY6Il90b2tlbiI7czo0MDoiOWtLZ1FrTFdQTzJEbktVazBDeUV0V3RzeEZTd2M5SGZZUzRVY05PVSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9sb2dpbiI7czo1OiJyb3V0ZSI7czo1OiJsb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1770016875);
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -647,7 +644,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Admin User','admin@blendup.local',NULL,'$2y$12$ogs15oFrHfWG2F.hBpm8h.7AiwYTIUuy9EGAtBUaSZibKmwNdY1rq',NULL,NULL,NULL,NULL,NULL,NULL,'admin','2026-02-02 01:10:04','2026-02-02 01:10:04'),(2,'Test User','user@blendup.local',NULL,'$2y$12$2bioE0FvpvxDkqHp1YbJGOAP4snkHDMVjnwfsyhDqlKys2FA6zjam',NULL,NULL,NULL,NULL,NULL,NULL,'user','2026-02-02 01:10:05','2026-02-02 01:10:05');
+INSERT INTO `users` VALUES (1,'Admin User','admin@blendup.local',NULL,'$2y$12$WhHE8vX73CwWbBQy5RC1Nu8ajg8StnSa6IfAz6EAtf/7U0kg7ZpHO',NULL,NULL,NULL,NULL,NULL,NULL,'admin','2026-02-02 04:09:34','2026-02-02 04:09:34'),(2,'Test User','user@blendup.local',NULL,'$2y$12$9YqKH1Abu8Q0z6VQBlchgOK2BXOnFQWwq0BEnm6NsL8FGFm2GQNT.',NULL,NULL,NULL,NULL,NULL,NULL,'user','2026-02-02 04:09:35','2026-02-02 04:09:35');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -660,4 +657,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-02 15:06:01
+-- Dump completed on 2026-02-02 15:09:48

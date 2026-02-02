@@ -42,7 +42,7 @@ class DrinkSeeder extends Seeder
                 'price' => 420.00,
                 'category' => 'Seasonal',
                 'is_featured' => true,
-                'image_url' => 'https://picsum.photos/seed/ss4/400/300',
+                'image_url' => 'https://images.unsplash.com/photo-1625667893125-ca3b9492946c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 'description' => 'Traditional yogurt-based drink with ripe mango pulp.',
             ],
             [
