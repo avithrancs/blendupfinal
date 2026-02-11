@@ -77,7 +77,7 @@
                                         </td>
                                         <td class="px-6 py-4">{{ $order->created_at->format('M d, Y') }}</td>
                                         <td class="px-6 py-4">{{ $order->items->count() }} items</td>
-                                        <td class="px-6 py-4 font-bold text-charcoal">${{ number_format($order->total, 2) }}</td>
+                                        <td class="px-6 py-4 font-bold text-charcoal">Rs. {{ number_format($order->total, 2) }}</td>
                                         <td class="px-6 py-4">
                                             <span class="px-3 py-1 rounded-full text-xs font-bold
                                                 {{ $order->status === 'delivered' ? 'bg-olive-green/20 text-olive-green' : 

@@ -76,7 +76,7 @@
                 @foreach($drinks as $drink)
                     <tr class="border-t">
                         <td class="py-2">{{ $drink->name }}</td>
-                        <td>${{ number_format($drink->price, 2) }}</td>
+                        <td>Rs. {{ number_format($drink->price, 2) }}</td>
                         <td>{{ $drink->category }}</td>
                         <td>{{ $drink->is_featured ? 'Yes' : 'No' }}</td>
                         <td class="space-x-2">

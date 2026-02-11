@@ -71,7 +71,7 @@
                                     <div class="text-gray-500">{{ $item->customizations }}</div>
                                 @endif
                             </div>
-                            <div class="font-semibold">${{ number_format($item->unit_price * $item->quantity, 2) }}</div>
+                            <div class="font-semibold">Rs. {{ number_format($item->unit_price * $item->quantity, 2) }}</div>
                         </div>
                         @endforeach
                     </div>
@@ -85,7 +85,7 @@
                             <span>Payment</span><span class="font-semibold uppercase">{{ $order->payment_method }}</span>
                         </div>
                         <div class="flex justify-between text-sm border-t pt-2">
-                            <span>Total</span><span class="font-bold text-deep-teal">${{ number_format($order->total, 2) }}</span>
+                            <span>Total</span><span class="font-bold text-deep-teal">Rs. {{ number_format($order->total, 2) }}</span>
                         </div>
                         @if ($order->address_json)
                             <div class="mt-3 text-sm">
